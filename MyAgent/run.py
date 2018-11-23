@@ -30,7 +30,7 @@ class MyAgent(DockerAgentRunner):
 def main():
     '''Inits and runs a Docker Agent'''
     sess = tf.InteractiveSession()
-    path = 'MCTS_net-DRL_1'
+    path = 'MCTS_net-DRL_2'
     params = joblib.load(path)
     agent = MyAgent(sess, params)
     agent.run()
